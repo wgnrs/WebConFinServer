@@ -44,6 +44,18 @@ namespace WebConFinServer
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebConFinServer v1"));
             }
 
+            if (env.IsProduction())
+            {   
+                app.UseSwagger();
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebConFinServer v1"));
+            }
+
+            if (env.IsStaging())
+            {
+                app.UseSwagger();
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebConFinServer v1"));
+            }
+
             app.UseHttpsRedirection();
 
             app.UseRouting();

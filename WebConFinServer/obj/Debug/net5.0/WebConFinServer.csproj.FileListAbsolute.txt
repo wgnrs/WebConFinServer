@@ -27,3 +27,5 @@ C:\Users\wagne\Projetos C#\Curso\ConFin\Repos\WebConFinServer\WebConFinServer\ob
 C:\Users\wagne\Projetos C#\Curso\ConFin\Repos\WebConFinServer\WebConFinServer\obj\Debug\net5.0\WebConFinServer.pdb
 C:\Users\wagne\Projetos C#\Curso\ConFin\Repos\WebConFinServer\WebConFinServer\obj\Debug\net5.0\WebConFinServer.genruntimeconfig.cache
 C:\Users\wagne\Projetos C#\Curso\ConFin\Repos\WebConFinServer\WebConFinServer\obj\Debug\net5.0\refint\WebConFinServer.dll
+C:\Users\wagne\Projetos C#\Curso\ConFin\Repos\WebConFinServer\WebConFinServer\bin\Debug\net5.0\appsettings.Production.json
+C:\Users\wagne\Projetos C#\Curso\ConFin\Repos\WebConFinServer\WebConFinServer\bin\Debug\net5.0\appsettings.Staging.json

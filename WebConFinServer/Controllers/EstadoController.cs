@@ -34,10 +34,12 @@ namespace WebConFinServer.Controllers
             return "Estado alterado com sucesso!";
         }
 
-        /*[HttpDelete]
+        [HttpDelete]
         public string DeleteEstado(Estado estado)
         {
+            Estado estadoAux = lista.Where(x => x.Sigla == estado.Sigla).FirstOrDefault();
+            lista.Remove(estadoAux);
             return "Estado deletado com sucesso!";
-        }*/
+        }
     }
 }

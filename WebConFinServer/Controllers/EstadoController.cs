@@ -10,19 +10,10 @@ namespace WebConFinServer.Controllers
     [ApiController]
     public class EstadoController : ControllerBase
     {
-        private static string[] Estados = new string[]
-        {
-            "São paulo", "Guatemala", "Pirituba"
-        };
-
         [HttpGet]
-        public IEnumerable<Estado> Get()
+        public string GetEstados()
         {
-            return Enumerable.Range(1, 3).Select(i => new Estado 
-            { 
-                Id = i,
-                Nome = Estados[i-1]
-            });
+            return "Estado retornado";
         }
     }
 }

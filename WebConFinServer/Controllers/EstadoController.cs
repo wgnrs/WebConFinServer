@@ -25,5 +25,19 @@ namespace WebConFinServer.Controllers
             lista.Add(estado);
             return "Estado cadastrado com sucesso!";
         }
+
+        [HttpPut]
+        public string PutEstado(Estado estado)
+        {
+            Estado estadoAux = lista.Where(x => x.Sigla == estado.Sigla).FirstOrDefault();
+            estadoAux.Nome = estado.Nome;
+            return "Estado alterado com sucesso!";
+        }
+
+        /*[HttpDelete]
+        public string DeleteEstado(Estado estado)
+        {
+            return "Estado deletado com sucesso!";
+        }*/
     }
 }

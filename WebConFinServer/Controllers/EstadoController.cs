@@ -10,10 +10,20 @@ namespace WebConFinServer.Controllers
     [ApiController]
     public class EstadoController : ControllerBase
     {
+
+        public static List<Estado> lista = new List<Estado>();
+
         [HttpGet]
-        public string GetEstados()
+        public List<Estado> GetEstados()
         {
-            return "Estado retornado";
+            return lista;
+        }
+
+        [HttpPost]
+        public string PostEstado(Estado estado) 
+        {
+            lista.Add(estado);
+            return "Estado cadastrado com sucesso!";
         }
     }
 }
